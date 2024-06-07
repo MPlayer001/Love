@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap"
+      rel="stylesheet"
+    />
+    <title>I Love You Mariana</title>
+    <style>
+      * {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+      }
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+      }
+
+      .background-image {
+        background-image: url("./image.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .form-container {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .form-container input {
+        display: block;
+        margin: 10px 0;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .form-container button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #a602ff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .form-container button:hover {
+        background-color: #a602ff;
+      }
+
+      .form-container a {
+        padding: 10px 20px;
+        border: none;
+        background-color: #a602ff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      #message {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-image">
+      <div class="form-container">
+        <h1>Love Calculator</h1>
+        <input type="text" id="field1" placeholder="Enter Name" />
+        <input type="text" id="field2" placeholder="Enter Name" />
+        <button><a href="./index2.html">Click me</a></button>
+        <p id="message"></p>
+      </div>
+    </div>
+
+    <script>
+      function showMessage() {
+        var field1 = document.getElementById("field1").value;
+        var field2 = document.getElementById("field2").value;
+        var message = `
+Mariana and Mohamad are soulmates; their love is the purest there is. Words can hardly capture the depth of my feelings for you, but I'll try my best to put into words what my heart sings every day.
+
+Your sunshine smile brightens even the darkest of days, filling my world with warmth and joy. Those gorgeous eyes of yours, so full of life and sparkle, have a way of seeing right into my soul, understanding me in ways no one else ever could.
+
+I am endlessly mesmerized by your curly hair. But more than anything, it's who you are inside that makes me love you even more. Your kindness, your strength, your incredible spirit—these are the qualities that make me proud to call you my soulmate.
+
+I want you to know that my love for you is unwavering. I am committed to you, today, tomorrow, and always. No matter where life takes us, you will never have to face it alone, for I am by your side, now and forever.
+
+I am so grateful for every moment we share, and I look forward to creating countless more memories together. You are my everything, and I will never leave your side.
+
+I love you, Mariana Nabil Saleh Al Rifaii. <3
+`;
+        document.getElementById("message").textContent = message;
+      }
+    </script>
+  </body>
+</html>
